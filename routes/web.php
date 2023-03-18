@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'page'])->name('home');
+
+
+Route::get('{any}', [PageController::class, 'route'])->name('anypage');
